@@ -1,0 +1,35 @@
+# Alpenrose configuration file
+# This is the TOML equivalent of Alpine's ~/.pinerc
+#
+# See `alpenrose --help` for command-line options.
+
+personal_name = "Your Name"
+user_domain = "example.com"
+
+[inbox]
+server = "imap.example.com"
+port = 993
+use_tls = true
+username = "you@example.com"
+mailbox = "INBOX"
+
+[smtp_server]
+server = "smtp.example.com"
+port = 587
+use_tls = true
+username = "you@example.com"
+
+[display]
+sort_key = "Arrival"
+sort_reverse = false
+threading = "None"
+index_format = "STATUS MSGNO DATE FROM SIZE SUBJECT"
+use_colors = true
+
+[features]
+enable_full_header = false
+enable_msg_view_urls = true
+enable_msg_view_attachments = true
+quit_without_confirm = false
+enable_bounce_cmd = false
+enable_flag_cmd = true
